@@ -71,7 +71,7 @@ npm link
 todo --version
 ```
 
-![Version](screenshots/version.png)
+![Version](screenshots/todo-version.png)
 
 ### Add a Todo
 
@@ -89,7 +89,7 @@ todo list --status pending
 todo list --tag shopping
 ```
 
-![List Todos](screenshots/list-todo.png)
+![List Todos](screenshots/todo-list.png)
 
 ### Mark Done
 
