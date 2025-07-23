@@ -1,0 +1,31 @@
+{
+  "name": "todo-cli",
+  "version": "1.0.0",
+  "description": "📝 A polished, interactive filesystem-based todo list CLI",
+  "type": "module",
+  "bin": {
+    "todo": "./bin/todo"
+  },
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "cli",
+    "todo",
+    "commander"
+  ],
+  "author": "YOUR NAME",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^14.0.0",
+    "figlet": "^1.8.2",
+    "inquirer": "^12.8.2",
+    "mkdirp": "^3.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.31.0",
+    "jest": "^30.0.5"
+  }
+}
