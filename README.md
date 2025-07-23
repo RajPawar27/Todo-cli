@@ -97,7 +97,7 @@ todo list --tag shopping
 todo done <id>
 ```
 
-![Mark Done](screenshots/done-todo.png)
+![Mark Done](screenshots/todo-done.png)
 
 ### Remove
 
