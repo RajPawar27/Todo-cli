@@ -20,7 +20,7 @@ Manage your tasks right from the terminal—with colors, ASCII art, and an inter
 
 ## 📁 Repository Layout
 
-```
+ 
 
 todo-cli/
 ├── bin/
@@ -42,7 +42,7 @@ todo-cli/
 ├── package.json
 └── README.md
 
-```
+ 
 
 ---
 
