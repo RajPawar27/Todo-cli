@@ -42,7 +42,7 @@ todo-cli/
 ├── package.json
 └── README.md
 
-````
+```
 
 ---
 
@@ -137,7 +137,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-> Built with ❤️ by [Your Name](https://github.com/<your-user>)
+> Built with ❤️ by RajPawar27(https://github.com/RajPawar27)
 
 ```
 ::contentReference[oaicite:0]{index=0}
