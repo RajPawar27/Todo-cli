@@ -1,0 +1,56 @@
+#!/usr/bin/env node
+import figlet from 'figlet';
+import chalk  from 'chalk';
+import { Command } from 'commander';
+import add        from '../commands/add.js';
+import list       from '../commands/list.js';
+import done       from '../commands/done.js';
+import remove     from '../commands/remove.js';
+import interactive from '../commands/interactive.js';
+
+const program = new Command();
+
+// ASCII-art header
+console.log(
+  chalk.cyan(
+    figlet.textSync('Todo-CLI', { horizontalLayout: 'full' })
+  )
+);
+
+program
+  .name('todo')
+  .description('📝 Manage your tasks from the terminal')
+  .version('1.0.0');
+
+// Register commands
+program
+  .command('add <text>')
+  .option('-d, --due <date>', 'due date (YYYY-MM-DD)')
+  .option('-p, --priority <lvl>', 'low|med|high', 'med')
+  .option('-t, --tag <tag...>', 'one or more tags')
+  .description('Add a new todo')
+  .action(add);
+
+program
+  .command('list')
+  .option('-s, --status <st>', 'all|pending|done', 'all')
+  .option('-t, --tag <tag>', 'filter by tag')
+  .description('List todos')
+  .action(list);
+
+program
+  .command('done <id>')
+  .description('Mark a todo done')
+  .action(done);
+
+program
+  .command('remove <id>')
+  .description('Delete a todo')
+  .action(remove);
+
+// If no args, launch interactive mode
+if (!process.argv.slice(2).length) {
+  interactive();
+} else {
+  program.parse();
+}
