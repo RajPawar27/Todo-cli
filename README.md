@@ -79,7 +79,7 @@ todo --version
 todo add "Buy groceries" --due 2025-08-01 --priority high --tag shopping errand
 ```
 
-![Add Todo](screenshots/add-todo.png)
+![Add Todo](screenshots/todo-add.png)
 
 ### List Todos
 
@@ -105,7 +105,7 @@ todo done <id>
 todo remove <id>
 ```
 
-![Remove Todo](screenshots/remove-todo.png)
+![Remove Todo](screenshots/todo-remove.png)
 
 ### Interactive Mode
 
